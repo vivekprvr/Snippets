@@ -1,7 +1,7 @@
 webyana css structure
 ====================================
 
-#Base
+##Base
 
 A Base rule is applied to an element using an element selector, a
 descendant selector, or a child selector, along with any pseudo classes
@@ -11,8 +11,8 @@ on the page.
 
 * css rest
 * There should be no need to use !important in a Base style.
-
-	- body, form {
+	```css
+	 body, form {
 				margin: 0;
 				padding: 0;
 				}
@@ -22,16 +22,17 @@ on the page.
 				a:hover {
 				color: #03F;
 				}
+	```
 
-#Layout
+##Layout
 
 The minor components—such as
 a callout, or login form, or a navigation item—sit within the scope
 of major components such as a header or footer. I refer to the minor
 components as Modules and will dive into those in the next section.
 The major components are referred to as Layout styles.
-
-	- #header, #article, #footer {
+```css
+	 #header, #article, #footer {
 		width: 960px;
 		margin: auto;
 		}
@@ -39,10 +40,11 @@ The major components are referred to as Layout styles.
 		border: solid #CCC;
 		border-width: 1px 0 0;
 		}
+```
 
-#Module
+##Module
 
-#State
+##State
 
 A state is something that augments and overrides all other styles.
 For example, an accordion section may be in a collapsed or expanded
