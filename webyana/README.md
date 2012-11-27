@@ -8,6 +8,10 @@ webyana css structure
 	It doesn't include any class or ID selectors. It is defining the
 	default styling for how that element should look in all occurrences
 	on the page.
+
+	* css rest
+	* There should be no need to use !important in a Base style.
+
 	- body, form {
 				margin: 0;
 				padding: 0;
@@ -20,6 +24,21 @@ webyana css structure
 				}
 
 #Layout
+
+	The minor components—such as
+	a callout, or login form, or a navigation item—sit within the scope
+	of major components such as a header or footer. I refer to the minor
+	components as Modules and will dive into those in the next section.
+	The major components are referred to as Layout styles.
+
+	- #header, #article, #footer {
+		width: 960px;
+		margin: auto;
+		}
+		#article {
+		border: solid #CCC;
+		border-width: 1px 0 0;
+		}
 
 #Module
 
